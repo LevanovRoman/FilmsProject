@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Proba</title>
+</head>
+<body>
+<p>{{ genre.name }}</p>
+<p>{{ genre.description }}</p>
+<p>{{ genre.url }}</p>
+<p>{{ genre.film_genre.count }}</p>
+{% for mm in genre.film_genre.all %}
+<p> proba: *{{ mm.title }}</p>
+{% endfor %}
+</body>
+</html>
